@@ -7,9 +7,6 @@ jobs:
   build:
     name: Build simple project
     runs-on: ubuntu-latest
-    runs:
-      using: 'node16'
-      main: 'index.js'
     steps:
       - name: Checkout project
         uses: actions/checkout@v3
