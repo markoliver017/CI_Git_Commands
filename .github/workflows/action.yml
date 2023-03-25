@@ -14,10 +14,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-      - name: Install dependencgi ies
+      - name: Install dependencies
         run: npm install
       - name: Test project
         run: npm test
-runs:
-  using: 'node16'
-  main: 'index.js'
+run:
+  runs-on: ubuntu-latest
+  needs: build
+  runs:
+    using: 'node16'
+    main: 'index.js'
