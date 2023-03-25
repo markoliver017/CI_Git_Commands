@@ -22,11 +22,11 @@ describe("Testing GitCommand.status()", function(){
     });
 
     it('Should return information if no changes in directory', function(){
-        // let wd = new WorkingDirectory();
-        // let git = new GitCommand(wd);
-        // git.init();
-        // let output = git.status();
+        let wd = new WorkingDirectory();
+        let git = new GitCommand(wd);
+        git.init();
+        let output = git.status();
 
-        // expect(output).to.equal('You have 0 change/s.\n');
+        expect(output).to.equal('You have 0 change/s.\n');
     });
 })
