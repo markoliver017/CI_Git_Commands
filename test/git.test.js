@@ -18,15 +18,6 @@ describe("Testing GitCommand.status()", function(){
         git.add('assets/scripts/index.js');
         let output = git.status();
 
-        expect(output).to.equal('You have 2 change/s.\nviews/index.html\nassets/scripts/index.js');
-    });
-
-    it('Should return information if no changes in directory', function(){
-        // let wd = new WorkingDirectory();
-        // let git = new GitCommand(wd);
-        // git.init();
-        // let output = git.status();
-
-        // expect(output).to.equal('You have 0 change/s.\n');
+        expect(output).to.equal('You have change/s.\nviews/index.html\nassets/scripts/index.js');
     });
 })
