@@ -1,8 +1,8 @@
-name: Github Actions Example
+name: CI Push Action
 on:
   push:
     branches:
-      - master
+      - feature/*
 jobs:
   build:
     name: Build simple project
