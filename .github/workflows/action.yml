@@ -7,6 +7,9 @@ jobs:
   build:
     name: Build simple project
     runs-on: ubuntu-latest
+    runs:
+      using: 'node16'
+      main: 'index.js'
     steps:
       - name: Checkout project
         uses: actions/checkout@v3
@@ -18,9 +21,3 @@ jobs:
         run: npm install
       - name: Test project
         run: npm test
-run:
-  runs-on: ubuntu-latest
-  needs: build
-  runs:
-    using: 'node16'
-    main: 'index.js'
