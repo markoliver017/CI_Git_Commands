@@ -18,6 +18,6 @@ describe("Testing GitCommand.status()", function(){
         git.add('assets/scripts/index.js');
         let output = git.status();
 
-        expect(output).to.equal('You have change/s.\nviews/index.html\nassets/scripts/index.js');
+        expect(output).to.equal('You have 22 change/s.\nviews/index.html\nassets/scripts/index.js');
     });
 })
