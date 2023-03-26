@@ -4,7 +4,6 @@ const GitCommand = require("../models/git-command");
 const chai = require('chai');
 const expect = chai.expect;
 
-
 describe("Testing GitCommand.status()", function(){
 
     it('Should return information if has changes in directory', function(){
@@ -21,3 +20,4 @@ describe("Testing GitCommand.status()", function(){
         expect(output).to.equal('You have 2 change/s.\nviews/index.html\nassets/scripts/index.js');
     });
 })
+
